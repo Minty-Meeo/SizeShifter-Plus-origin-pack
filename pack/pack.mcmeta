@@ -1,0 +1,10 @@
+{
+	"pack": {
+		"name": "SizeShifter+ Origin",
+		"id": "sizeshifter",
+		"pack_format": 10,
+		"authors": "Minty Meeo",
+		"version": "1.0.0",
+		"description": "Size changing origin."
+	}
+}

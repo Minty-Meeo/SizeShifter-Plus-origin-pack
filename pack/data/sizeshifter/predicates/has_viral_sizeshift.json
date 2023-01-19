@@ -1,0 +1,5 @@
+{
+    "condition": "apoli:power",
+    "power": "sizeshifter:sizeshift",
+    "source": "sizeshifter:sizeshifter_viral"
+}
