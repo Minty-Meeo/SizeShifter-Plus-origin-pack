@@ -118,7 +118,21 @@
             "type": "origins:and",
             "conditions": [
                 {
-                    "type": "origins:collided_horizontally"
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:block_collision",
+                            "offset_x": 0.01,
+                            "offset_z": 0.01,
+                            "offset_y": 0
+                        },
+                        {
+                            "type": "origins:block_collision",
+                            "offset_x": -0.01,
+                            "offset_z": -0.01,
+                            "offset_y": 0
+                        }
+                    ]
                 },
                 {
                     "type": "origins:resource",
