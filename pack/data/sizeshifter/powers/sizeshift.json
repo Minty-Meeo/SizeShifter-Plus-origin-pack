@@ -26,7 +26,7 @@
             ]
         }
     },
-    "tiny_fall_immunity": {
+    "tiny1_fall_immunity": {
         "type": "origins:invulnerability",
         "damage_condition": {
             "type": "origins:from_falling"
@@ -38,7 +38,7 @@
             "compare_to": "0"
         }
     },
-    "tiny_viscosity_water": {
+    "tiny3_viscosity_water": {
         "type": "origins:prevent_sprinting",
         "condition": {
             "type": "origins:and",
@@ -56,7 +56,7 @@
             ]
         }
     },
-    "tiny_viscosity_air": {
+    "tiny4_viscosity_air": {
         "type": "origins:swimming",
         "condition": {
             "type": "origins:and",
@@ -79,7 +79,7 @@
             ]
         }
     },
-    "huge_viscosity_water": {
+    "huge2_viscosity_water": {
         "type": "origins:prevent_sprinting",
         "condition": {
             "type": "origins:and",
@@ -97,7 +97,25 @@
             ]
         }
     },
-    "tiny_climbing": {
+    "huge3_viscosity_water": {
+        "type": "origins:ignore_water",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "comparison": ">",
+                    "compare_to": "2"
+                },
+                {
+                    "type": "origins:sprinting",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "tiny1_climbing": {
         "type": "origins:climbing",
         "allow_holding": true,
         "condition": {
@@ -139,6 +157,478 @@
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "<",
                     "compare_to": 0
+                }
+            ]
+        }
+    },
+    "huge2_no_flight": {
+        "type": "origins:prevent_elytra_flight",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sizeshifter:sizeshift_resource",
+            "comparison": ">",
+            "compare_to": "1"
+        }
+    },
+    "tiny3_metabolism": {
+        "type": "origins:modify_exhaustion",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sizeshifter:sizeshift_resource",
+            "comparison": "<=",
+            "compare_to": "-3"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 4.0
+        }
+    },
+    "tiny2_metabolism": {
+        "type": "origins:modify_exhaustion",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sizeshifter:sizeshift_resource",
+            "comparison": "==",
+            "compare_to": "-2"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 3.0
+        }
+    },
+    "tiny1_metabolism": {
+        "type": "origins:modify_exhaustion",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sizeshifter:sizeshift_resource",
+            "comparison": "==",
+            "compare_to": "-1"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 2.0
+        }
+    },
+    "huge1_metabolism": {
+        "type": "origins:modify_exhaustion",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sizeshifter:sizeshift_resource",
+            "comparison": "==",
+            "compare_to": "1"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 2.0
+        }
+    },
+    "huge2_metabolism": {
+        "type": "origins:modify_exhaustion",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sizeshifter:sizeshift_resource",
+            "comparison": "==",
+            "compare_to": "2"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 3.0
+        }
+    },
+    "huge3_metabolism": {
+        "type": "origins:modify_exhaustion",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sizeshifter:sizeshift_resource",
+            "comparison": "==",
+            "compare_to": "3"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 4.0
+        }
+    },
+    "tiny8_min_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 8,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "comparison": "==",
+                    "compare_to": "-8"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 15
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "operation": "set",
+                    "change": -7
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:tiny7"
+                }
+            ]
+        }
+    },
+    "tiny7_min_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 8,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "comparison": "==",
+                    "compare_to": "-7"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 14
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "operation": "set",
+                    "change": -6
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:tiny6"
+                }
+            ]
+        }
+    },
+    "tiny6_min_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 8,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "comparison": "==",
+                    "compare_to": "-6"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 13
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "operation": "set",
+                    "change": -5
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:tiny5"
+                }
+            ]
+        }
+    },
+    "tiny5_min_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 8,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "comparison": "==",
+                    "compare_to": "-5"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 12
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "operation": "set",
+                    "change": -4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:tiny4"
+                }
+            ]
+        }
+    },
+    "tiny4_min_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 8,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "comparison": "==",
+                    "compare_to": "-4"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 11
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "operation": "set",
+                    "change": -3
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:tiny3"
+                }
+            ]
+        }
+    },
+    "tiny3_min_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 8,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "comparison": "==",
+                    "compare_to": "-3"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 10
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "operation": "set",
+                    "change": -2
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:tiny2"
+                }
+            ]
+        }
+    },
+    "tiny2_min_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 8,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "comparison": "==",
+                    "compare_to": "-2"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 8
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "operation": "set",
+                    "change": -1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:tiny1"
+                }
+            ]
+        }
+    },
+    "tiny1_min_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 8,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "comparison": "==",
+                    "compare_to": "-1"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 6
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:size0"
+                }
+            ]
+        }
+    },
+    "huge1_min_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 8,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "comparison": "==",
+                    "compare_to": "1"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 6
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:size0"
+                }
+            ]
+        }
+    },
+    "huge2_min_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 8,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "comparison": "==",
+                    "compare_to": "2"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 8
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "operation": "set",
+                    "change": 1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:huge1"
+                }
+            ]
+        }
+    },
+    "huge3_min_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 8,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "comparison": "==",
+                    "compare_to": "3"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 10
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "sizeshifter:sizeshift_resource",
+                    "operation": "set",
+                    "change": 2
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:huge2"
                 }
             ]
         }
