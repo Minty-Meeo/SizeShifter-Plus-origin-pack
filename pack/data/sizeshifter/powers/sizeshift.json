@@ -34,8 +34,8 @@
         "condition": {
             "type": "origins:resource",
             "resource": "sizeshifter:sizeshift_resource",
-            "comparison": "<",
-            "compare_to": "0"
+            "comparison": "<=",
+            "compare_to": 1
         }
     },
     "tiny3_viscosity_water": {
@@ -46,8 +46,8 @@
                 {
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
-                    "comparison": "<",
-                    "compare_to": "-2"
+                    "comparison": "<=",
+                    "compare_to": -3
                 },
                 {
                     "type": "origins:submerged_in",
@@ -64,8 +64,8 @@
                 {
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
-                    "comparison": "<",
-                    "compare_to": "-4"
+                    "comparison": "<=",
+                    "compare_to": -5
                 },
                 {
                     "type": "origins:submerged_in",
@@ -87,8 +87,8 @@
                 {
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
-                    "comparison": ">",
-                    "compare_to": "1"
+                    "comparison": ">=",
+                    "compare_to": 2
                 },
                 {
                     "type": "origins:submerged_in",
@@ -105,8 +105,8 @@
                 {
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
-                    "comparison": ">",
-                    "compare_to": "2"
+                    "comparison": ">=",
+                    "compare_to": 3
                 },
                 {
                     "type": "origins:sprinting",
@@ -127,8 +127,8 @@
                 {
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
-                    "comparison": "<",
-                    "compare_to": 0
+                    "comparison": "<=",
+                    "compare_to": -1
                 }
             ]
         },
@@ -155,8 +155,8 @@
                 {
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
-                    "comparison": "<",
-                    "compare_to": 0
+                    "comparison": "<=",
+                    "compare_to": -1
                 }
             ]
         }
@@ -166,8 +166,8 @@
         "condition": {
             "type": "origins:resource",
             "resource": "sizeshifter:sizeshift_resource",
-            "comparison": ">",
-            "compare_to": "1"
+            "comparison": ">=",
+            "compare_to": 2
         }
     },
     "tiny3_metabolism": {
@@ -176,7 +176,7 @@
             "type": "origins:resource",
             "resource": "sizeshifter:sizeshift_resource",
             "comparison": "<=",
-            "compare_to": "-3"
+            "compare_to": -3
         },
         "modifier": {
             "operation": "multiply_base",
@@ -189,7 +189,7 @@
             "type": "origins:resource",
             "resource": "sizeshifter:sizeshift_resource",
             "comparison": "==",
-            "compare_to": "-2"
+            "compare_to": -2
         },
         "modifier": {
             "operation": "multiply_base",
@@ -202,7 +202,7 @@
             "type": "origins:resource",
             "resource": "sizeshifter:sizeshift_resource",
             "comparison": "==",
-            "compare_to": "-1"
+            "compare_to": -1
         },
         "modifier": {
             "operation": "multiply_base",
@@ -215,7 +215,7 @@
             "type": "origins:resource",
             "resource": "sizeshifter:sizeshift_resource",
             "comparison": "==",
-            "compare_to": "1"
+            "compare_to": 1
         },
         "modifier": {
             "operation": "multiply_base",
@@ -228,7 +228,7 @@
             "type": "origins:resource",
             "resource": "sizeshifter:sizeshift_resource",
             "comparison": "==",
-            "compare_to": "2"
+            "compare_to": 2
         },
         "modifier": {
             "operation": "multiply_base",
@@ -241,7 +241,7 @@
             "type": "origins:resource",
             "resource": "sizeshifter:sizeshift_resource",
             "comparison": "==",
-            "compare_to": "3"
+            "compare_to": 3
         },
         "modifier": {
             "operation": "multiply_base",
@@ -258,7 +258,7 @@
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "==",
-                    "compare_to": "-8"
+                    "compare_to": -8
                 },
                 {
                     "type": "origins:food_level",
@@ -293,7 +293,7 @@
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "==",
-                    "compare_to": "-7"
+                    "compare_to": -7
                 },
                 {
                     "type": "origins:food_level",
@@ -328,7 +328,7 @@
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "==",
-                    "compare_to": "-6"
+                    "compare_to": -6
                 },
                 {
                     "type": "origins:food_level",
@@ -363,7 +363,7 @@
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "==",
-                    "compare_to": "-5"
+                    "compare_to": -5
                 },
                 {
                     "type": "origins:food_level",
@@ -398,7 +398,7 @@
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "==",
-                    "compare_to": "-4"
+                    "compare_to": -4
                 },
                 {
                     "type": "origins:food_level",
@@ -433,7 +433,7 @@
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "==",
-                    "compare_to": "-3"
+                    "compare_to": -3
                 },
                 {
                     "type": "origins:food_level",
@@ -468,7 +468,7 @@
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "==",
-                    "compare_to": "-2"
+                    "compare_to": -2
                 },
                 {
                     "type": "origins:food_level",
@@ -503,7 +503,7 @@
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "==",
-                    "compare_to": "-1"
+                    "compare_to": -1
                 },
                 {
                     "type": "origins:food_level",
@@ -538,7 +538,7 @@
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "==",
-                    "compare_to": "1"
+                    "compare_to": 1
                 },
                 {
                     "type": "origins:food_level",
@@ -573,7 +573,7 @@
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "==",
-                    "compare_to": "2"
+                    "compare_to": 2
                 },
                 {
                     "type": "origins:food_level",
@@ -608,7 +608,7 @@
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "==",
-                    "compare_to": "3"
+                    "compare_to": 3
                 },
                 {
                     "type": "origins:food_level",

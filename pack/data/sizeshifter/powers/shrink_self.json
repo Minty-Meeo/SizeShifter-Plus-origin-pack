@@ -16,7 +16,7 @@
 							"type": "origins:resource",
 							"resource": "sizeshifter:sizeshift_resource",
 							"comparison": "==",
-							"compare_to": "-8"
+							"compare_to": -8
 						},
 						"action": {
 							"type": "origins:execute_command",
@@ -28,7 +28,7 @@
 							"type": "origins:resource",
 							"resource": "sizeshifter:sizeshift_resource",
 							"comparison": "==",
-							"compare_to": "-7"
+							"compare_to": -7
 						},
 						"action": {
 							"type": "origins:execute_command",
@@ -40,7 +40,7 @@
 							"type": "origins:resource",
 							"resource": "sizeshifter:sizeshift_resource",
 							"comparison": "==",
-							"compare_to": "-6"
+							"compare_to": -6
 						},
 						"action": {
 							"type": "origins:execute_command",
@@ -52,7 +52,7 @@
 							"type": "origins:resource",
 							"resource": "sizeshifter:sizeshift_resource",
 							"comparison": "==",
-							"compare_to": "-5"
+							"compare_to": -5
 						},
 						"action": {
 							"type": "origins:execute_command",
@@ -64,7 +64,7 @@
 							"type": "origins:resource",
 							"resource": "sizeshifter:sizeshift_resource",
 							"comparison": "==",
-							"compare_to": "-4"
+							"compare_to": -4
 						},
 						"action": {
 							"type": "origins:execute_command",
@@ -76,7 +76,7 @@
 							"type": "origins:resource",
 							"resource": "sizeshifter:sizeshift_resource",
 							"comparison": "==",
-							"compare_to": "-3"
+							"compare_to": -3
 						},
 						"action": {
 							"type": "origins:execute_command",
@@ -88,7 +88,7 @@
 							"type": "origins:resource",
 							"resource": "sizeshifter:sizeshift_resource",
 							"comparison": "==",
-							"compare_to": "-2"
+							"compare_to": -2
 						},
 						"action": {
 							"type": "origins:execute_command",
@@ -100,7 +100,7 @@
 							"type": "origins:resource",
 							"resource": "sizeshifter:sizeshift_resource",
 							"comparison": "==",
-							"compare_to": "-1"
+							"compare_to": -1
 						},
 						"action": {
 							"type": "origins:execute_command",
@@ -112,7 +112,7 @@
 							"type": "origins:resource",
 							"resource": "sizeshifter:sizeshift_resource",
 							"comparison": "==",
-							"compare_to": "0"
+							"compare_to": 0
 						},
 						"action": {
 							"type": "origins:execute_command",
@@ -124,7 +124,7 @@
 							"type": "origins:resource",
 							"resource": "sizeshifter:sizeshift_resource",
 							"comparison": "==",
-							"compare_to": "1"
+							"compare_to": 1
 						},
 						"action": {
 							"type": "origins:execute_command",
@@ -136,7 +136,7 @@
 							"type": "origins:resource",
 							"resource": "sizeshifter:sizeshift_resource",
 							"comparison": "==",
-							"compare_to": "2"
+							"compare_to": 2
 						},
 						"action": {
 							"type": "origins:execute_command",
@@ -148,7 +148,7 @@
 							"type": "origins:resource",
 							"resource": "sizeshifter:sizeshift_resource",
 							"comparison": "==",
-							"compare_to": "3"
+							"compare_to": 3
 						},
 						"action": {
 							"type": "origins:execute_command",
