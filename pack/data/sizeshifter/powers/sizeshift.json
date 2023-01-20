@@ -47,7 +47,7 @@
                     "type": "origins:resource",
                     "resource": "sizeshifter:sizeshift_resource",
                     "comparison": "<",
-                    "compare_to": "-3"
+                    "compare_to": "-2"
                 },
                 {
                     "type": "origins:submerged_in",
@@ -56,7 +56,7 @@
             ]
         }
     },
-    "tiny4_viscosity_air": {
+    "tiny5_viscosity_air": {
         "type": "origins:swimming",
         "condition": {
             "type": "origins:and",
