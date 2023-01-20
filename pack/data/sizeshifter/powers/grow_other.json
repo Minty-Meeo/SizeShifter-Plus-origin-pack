@@ -29,7 +29,7 @@
 								"if_action": {
 									"type": "origins:grant_power",
 									"power": "sizeshifter:sizeshift",
-									"source": "sizeshifter:sizeshifter_viral"
+									"source": "sizeshifter:viral"
 								}
 							},
 							{
