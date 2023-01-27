@@ -5,7 +5,7 @@
 		"actions": [
 			{
 				"type": "origins:exhaust",
-				"amount": 32.0
+				"amount": 16.0
 			},
 			{
 				"type": "origins:raycast",
