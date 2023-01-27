@@ -195,7 +195,7 @@
 	"condition": {
 		"type": "origins:food_level",
 		"comparison": ">=",
-		"compare_to": 8
+		"compare_to": 4
 	},
 	"cooldown": 20,
 	"hud_render": {
