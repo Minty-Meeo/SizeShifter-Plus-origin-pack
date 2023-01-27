@@ -7,6 +7,25 @@
         "entity": true,
         "shape_type": "visual",
         "fluid_handling": "any",
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:food_level",
+                        "comparison": ">=",
+                        "compare_to": 4
+                    }
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:living"
+                    }
+                }
+            ]
+        },
         "bientity_action": {
             "type": "origins:and",
             "actions": [
@@ -195,11 +214,6 @@
                 }
             ]
         }
-    },
-    "condition": {
-        "type": "origins:food_level",
-        "comparison": ">=",
-        "compare_to": 4
     },
     "cooldown": 20,
     "hud_render": {
