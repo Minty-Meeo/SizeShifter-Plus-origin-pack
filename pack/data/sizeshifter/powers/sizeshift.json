@@ -180,7 +180,7 @@
         },
         "modifier": {
             "operation": "multiply_base",
-            "value": 4.0
+            "value": 4
         }
     },
     "tiny2_metabolism": {
@@ -193,7 +193,7 @@
         },
         "modifier": {
             "operation": "multiply_base",
-            "value": 3.0
+            "value": 3
         }
     },
     "tiny1_metabolism": {
@@ -206,7 +206,7 @@
         },
         "modifier": {
             "operation": "multiply_base",
-            "value": 2.0
+            "value": 2
         }
     },
     "huge1_metabolism": {
@@ -219,7 +219,7 @@
         },
         "modifier": {
             "operation": "multiply_base",
-            "value": 2.0
+            "value": 2
         }
     },
     "huge2_metabolism": {
@@ -232,7 +232,7 @@
         },
         "modifier": {
             "operation": "multiply_base",
-            "value": 3.0
+            "value": 3
         }
     },
     "huge3_metabolism": {
@@ -245,7 +245,7 @@
         },
         "modifier": {
             "operation": "multiply_base",
-            "value": 4.0
+            "value": 4
         }
     },
     "tiny8_min_hunger": {
