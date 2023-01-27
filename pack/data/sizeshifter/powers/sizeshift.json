@@ -250,7 +250,7 @@
     },
     "size_min_hunger": {
         "type": "origins:action_over_time",
-        "interval": 8,
+        "interval": 10,
         "entity_action": {
             "type": "origins:and",
             "actions": [
@@ -268,7 +268,7 @@
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
-                                "compare_to": 15
+                                "compare_to": 14
                             }
                         ]
                     },
@@ -291,7 +291,7 @@
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
-                                "compare_to": 14
+                                "compare_to": 12
                             }
                         ]
                     },
@@ -314,7 +314,7 @@
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
-                                "compare_to": 13
+                                "compare_to": 10
                             }
                         ]
                     },
@@ -337,7 +337,7 @@
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
-                                "compare_to": 12
+                                "compare_to": 8
                             }
                         ]
                     },
@@ -360,7 +360,7 @@
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
-                                "compare_to": 11
+                                "compare_to": 6
                             }
                         ]
                     },
@@ -383,7 +383,7 @@
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
-                                "compare_to": 10
+                                "compare_to": 4
                             }
                         ]
                     },
@@ -406,7 +406,7 @@
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
-                                "compare_to": 8
+                                "compare_to": 2
                             }
                         ]
                     },
@@ -429,7 +429,7 @@
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
-                                "compare_to": 6
+                                "compare_to": 0
                             }
                         ]
                     },
@@ -452,7 +452,7 @@
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
-                                "compare_to": 10
+                                "compare_to": 14
                             }
                         ]
                     },
@@ -475,7 +475,7 @@
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
-                                "compare_to": 8
+                                "compare_to": 10
                             }
                         ]
                     },
