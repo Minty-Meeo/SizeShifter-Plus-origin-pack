@@ -273,19 +273,8 @@
                         ]
                     },
                     "if_action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "operation": "set",
-                                "change": -7
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "function sizeshifter:tiny7"
-                            }
-                        ]
+                        "type": "origins:execute_command",
+                        "command": "function sizeshifter:force_tiny7"
                     }
                 },
                 {
@@ -307,19 +296,8 @@
                         ]
                     },
                     "if_action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "operation": "set",
-                                "change": -6
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "function sizeshifter:tiny6"
-                            }
-                        ]
+                        "type": "origins:execute_command",
+                        "command": "function sizeshifter:force_tiny6"
                     }
                 },
                 {
@@ -341,19 +319,8 @@
                         ]
                     },
                     "if_action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "operation": "set",
-                                "change": -5
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "function sizeshifter:tiny5"
-                            }
-                        ]
+                        "type": "origins:execute_command",
+                        "command": "function sizeshifter:force_tiny5"
                     }
                 },
                 {
@@ -375,19 +342,8 @@
                         ]
                     },
                     "if_action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "operation": "set",
-                                "change": -4
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "function sizeshifter:tiny4"
-                            }
-                        ]
+                        "type": "origins:execute_command",
+                        "command": "function sizeshifter:force_tiny4"
                     }
                 },
                 {
@@ -409,19 +365,8 @@
                         ]
                     },
                     "if_action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "operation": "set",
-                                "change": -3
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "function sizeshifter:tiny3"
-                            }
-                        ]
+                        "type": "origins:execute_command",
+                        "command": "function sizeshifter:force_tiny3"
                     }
                 },
                 {
@@ -443,19 +388,8 @@
                         ]
                     },
                     "if_action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "operation": "set",
-                                "change": -2
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "function sizeshifter:tiny2"
-                            }
-                        ]
+                        "type": "origins:execute_command",
+                        "command": "function sizeshifter:force_tiny2"
                     }
                 },
                 {
@@ -477,19 +411,8 @@
                         ]
                     },
                     "if_action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "operation": "set",
-                                "change": -1
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "function sizeshifter:tiny1"
-                            }
-                        ]
+                        "type": "origins:execute_command",
+                        "command": "function sizeshifter:force_tiny1"
                     }
                 },
                 {
@@ -511,19 +434,8 @@
                         ]
                     },
                     "if_action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "operation": "set",
-                                "change": 0
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "function sizeshifter:size0"
-                            }
-                        ]
+                        "type": "origins:execute_command",
+                        "command": "function sizeshifter:force_size0"
                     }
                 },
                 {
@@ -545,19 +457,8 @@
                         ]
                     },
                     "if_action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "operation": "set",
-                                "change": 2
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "function sizeshifter:huge2"
-                            }
-                        ]
+                        "type": "origins:execute_command",
+                        "command": "function sizeshifter:force_huge2"
                     }
                 },
                 {
@@ -579,19 +480,8 @@
                         ]
                     },
                     "if_action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "operation": "set",
-                                "change": 1
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "function sizeshifter:huge1"
-                            }
-                        ]
+                        "type": "origins:execute_command",
+                        "command": "function sizeshifter:force_huge1"
                     }
                 },
                 {
@@ -613,19 +503,8 @@
                         ]
                     },
                     "if_action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "operation": "set",
-                                "change": 0
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "function sizeshifter:size0"
-                            }
-                        ]
+                        "type": "origins:execute_command",
+                        "command": "function sizeshifter:force_size0"
                     }
                 }
             ]
