@@ -252,249 +252,78 @@
         "type": "origins:action_over_time",
         "interval": 10,
         "entity_action": {
-            "type": "origins:and",
+            "type": "origins:if_else_list",
             "actions": [
                 {
-                    "type": "origins:if_else",
                     "condition": {
                         "type": "origins:and",
                         "conditions": [
-                            {
-                                "type": "origins:resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "comparison": "==",
-                                "compare_to": -8
-                            },
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
-                                "compare_to": 14
-                            }
-                        ]
-                    },
-                    "if_action": {
-                        "type": "origins:execute_command",
-                        "command": "function sizeshifter:force_tiny7"
-                    }
-                },
-                {
-                    "type": "origins:if_else",
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
+                                "compare_to": 0
+                            },
                             {
                                 "type": "origins:resource",
                                 "resource": "sizeshifter:sizeshift_resource",
-                                "comparison": "==",
-                                "compare_to": -7
-                            },
-                            {
-                                "type": "origins:food_level",
-                                "comparison": "<=",
-                                "compare_to": 12
+                                "comparison": "<",
+                                "compare_to": 0
                             }
                         ]
                     },
-                    "if_action": {
+                    "action": {
                         "type": "origins:execute_command",
-                        "command": "function sizeshifter:force_tiny6"
+                        "command": "function sizeshifter:force_size0"
                     }
                 },
                 {
-                    "type": "origins:if_else",
                     "condition": {
                         "type": "origins:and",
                         "conditions": [
-                            {
-                                "type": "origins:resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "comparison": "==",
-                                "compare_to": -6
-                            },
-                            {
-                                "type": "origins:food_level",
-                                "comparison": "<=",
-                                "compare_to": 10
-                            }
-                        ]
-                    },
-                    "if_action": {
-                        "type": "origins:execute_command",
-                        "command": "function sizeshifter:force_tiny5"
-                    }
-                },
-                {
-                    "type": "origins:if_else",
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "comparison": "==",
-                                "compare_to": -5
-                            },
-                            {
-                                "type": "origins:food_level",
-                                "comparison": "<=",
-                                "compare_to": 8
-                            }
-                        ]
-                    },
-                    "if_action": {
-                        "type": "origins:execute_command",
-                        "command": "function sizeshifter:force_tiny4"
-                    }
-                },
-                {
-                    "type": "origins:if_else",
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "comparison": "==",
-                                "compare_to": -4
-                            },
-                            {
-                                "type": "origins:food_level",
-                                "comparison": "<=",
-                                "compare_to": 6
-                            }
-                        ]
-                    },
-                    "if_action": {
-                        "type": "origins:execute_command",
-                        "command": "function sizeshifter:force_tiny3"
-                    }
-                },
-                {
-                    "type": "origins:if_else",
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "comparison": "==",
-                                "compare_to": -3
-                            },
-                            {
-                                "type": "origins:food_level",
-                                "comparison": "<=",
-                                "compare_to": 4
-                            }
-                        ]
-                    },
-                    "if_action": {
-                        "type": "origins:execute_command",
-                        "command": "function sizeshifter:force_tiny2"
-                    }
-                },
-                {
-                    "type": "origins:if_else",
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "comparison": "==",
-                                "compare_to": -2
-                            },
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
                                 "compare_to": 2
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "sizeshifter:sizeshift_resource",
+                                "comparison": "<",
+                                "compare_to": -1
                             }
                         ]
                     },
-                    "if_action": {
+                    "action": {
                         "type": "origins:execute_command",
                         "command": "function sizeshifter:force_tiny1"
                     }
                 },
                 {
-                    "type": "origins:if_else",
                     "condition": {
                         "type": "origins:and",
                         "conditions": [
-                            {
-                                "type": "origins:resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "comparison": "==",
-                                "compare_to": -1
-                            },
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
-                                "compare_to": 0
-                            }
-                        ]
-                    },
-                    "if_action": {
-                        "type": "origins:execute_command",
-                        "command": "function sizeshifter:force_size0"
-                    }
-                },
-                {
-                    "type": "origins:if_else",
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
+                                "compare_to": 4
+                            },
                             {
                                 "type": "origins:resource",
                                 "resource": "sizeshifter:sizeshift_resource",
-                                "comparison": "==",
-                                "compare_to": 3
-                            },
-                            {
-                                "type": "origins:food_level",
-                                "comparison": "<=",
-                                "compare_to": 14
+                                "comparison": "<",
+                                "compare_to": -2
                             }
                         ]
                     },
-                    "if_action": {
+                    "action": {
                         "type": "origins:execute_command",
-                        "command": "function sizeshifter:force_huge2"
+                        "command": "function sizeshifter:force_tiny2"
                     }
                 },
                 {
-                    "type": "origins:if_else",
                     "condition": {
                         "type": "origins:and",
                         "conditions": [
-                            {
-                                "type": "origins:resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "comparison": "==",
-                                "compare_to": 2
-                            },
-                            {
-                                "type": "origins:food_level",
-                                "comparison": "<=",
-                                "compare_to": 10
-                            }
-                        ]
-                    },
-                    "if_action": {
-                        "type": "origins:execute_command",
-                        "command": "function sizeshifter:force_huge1"
-                    }
-                },
-                {
-                    "type": "origins:if_else",
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:resource",
-                                "resource": "sizeshifter:sizeshift_resource",
-                                "comparison": "==",
-                                "compare_to": 1
-                            },
                             {
                                 "type": "origins:food_level",
                                 "comparison": "<=",
@@ -502,9 +331,160 @@
                             }
                         ]
                     },
-                    "if_action": {
+                    "action": {
+                        "type": "origins:if_else_list",
+                        "actions": [
+                            {
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "resource": "sizeshifter:sizeshift_resource",
+                                    "comparison": "<",
+                                    "compare_to": -3
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "function sizeshifter:force_tiny3"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "resource": "sizeshifter:sizeshift_resource",
+                                    "comparison": ">",
+                                    "compare_to": 0
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "function sizeshifter:force_size0"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "<=",
+                                "compare_to": 8
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "sizeshifter:sizeshift_resource",
+                                "comparison": "<",
+                                "compare_to": -4
+                            }
+                        ]
+                    },
+                    "action": {
                         "type": "origins:execute_command",
-                        "command": "function sizeshifter:force_size0"
+                        "command": "function sizeshifter:force_tiny4"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "<=",
+                                "compare_to": 10
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:if_else_list",
+                        "actions": [
+                            {
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "resource": "sizeshifter:sizeshift_resource",
+                                    "comparison": "<",
+                                    "compare_to": -5
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "function sizeshifter:force_tiny5"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "resource": "sizeshifter:sizeshift_resource",
+                                    "comparison": ">",
+                                    "compare_to": 1
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "function sizeshifter:force_huge1"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "<=",
+                                "compare_to": 12
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "sizeshifter:sizeshift_resource",
+                                "comparison": "<",
+                                "compare_to": -6
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "function sizeshifter:force_tiny6"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "<=",
+                                "compare_to": 14
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:if_else_list",
+                        "actions": [
+                            {
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "resource": "sizeshifter:sizeshift_resource",
+                                    "comparison": "<",
+                                    "compare_to": -7
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "function sizeshifter:force_tiny7"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "resource": "sizeshifter:sizeshift_resource",
+                                    "comparison": ">",
+                                    "compare_to": 2
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "function sizeshifter:force_huge2"
+                                }
+                            }
+                        ]
                     }
                 }
             ]
