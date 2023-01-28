@@ -256,6 +256,17 @@
             "actions": [
                 {
                     "condition": {
+                        "type": "origins:resource",
+                        "resource": "sizeshifter:sizeshift_resource",
+                        "comparison": "==",
+                        "compare_to": 0
+                    },
+                    "action": {
+                        "type": "origins:nothing"
+                    }
+                },
+                {
+                    "condition": {
                         "type": "origins:and",
                         "conditions": [
                             {
