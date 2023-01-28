@@ -13,9 +13,28 @@
                 {
                     "type": "origins:actor_condition",
                     "condition": {
-                        "type": "origins:food_level",
-                        "comparison": ">=",
-                        "compare_to": 4
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:gamemode",
+                                "gamemode": "spectator",
+                                "inverted": true
+                            },
+                            {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type": "origins:gamemode",
+                                        "gamemode": "creative"
+                                    },
+                                    {
+                                        "type": "origins:food_level",
+                                        "comparison": ">=",
+                                        "compare_to": 4
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 },
                 {

@@ -256,10 +256,23 @@
             "actions": [
                 {
                     "condition": {
-                        "type": "origins:resource",
-                        "resource": "sizeshifter:sizeshift_resource",
-                        "comparison": "==",
-                        "compare_to": 0
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:gamemode",
+                                "gamemode": "creative"
+                            },
+                            {
+                                "type": "origins:gamemode",
+                                "gamemode": "spectator"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "sizeshifter:sizeshift_resource",
+                                "comparison": "==",
+                                "compare_to": 0
+                            }
+                        ]
                     },
                     "action": {
                         "type": "origins:nothing"
