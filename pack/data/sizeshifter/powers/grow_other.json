@@ -32,8 +32,16 @@
                 {
                     "type": "origins:actor_action",
                     "action": {
-                        "type": "origins:exhaust",
-                        "amount": 16
+                        "type": "origins:if_else",
+                        "condition": {
+                            "type": "origins:gamemode",
+                            "gamemode": "creative",
+                            "inverted": true
+                        },
+                        "if_action": {
+                            "type": "origins:exhaust",
+                            "amount": 16
+                        }
                     }
                 },
                 {
