@@ -165,6 +165,62 @@
             ]
         }
     },
+    "tiny1_prick_resistance": {
+        "type": "origins:modify_damage_taken",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sizeshifter:sizeshift_resource",
+            "comparison": "<=",
+            "compare_to": -1
+        },
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "cactus"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "sweetBerryBush"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "thorns"
+                }
+            ]
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -0.625
+        }
+    },
+    "tiny2_prick_immunity": {
+        "type": "origins:invulnerability",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "sizeshifter:sizeshift_resource",
+            "comparison": "<=",
+            "compare_to": -2
+        },
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "cactus"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "sweetBerryBush"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "thorns"
+                }
+            ]
+        }
+    },
     "huge2_no_flight": {
         "type": "origins:prevent_elytra_flight",
         "condition": {
