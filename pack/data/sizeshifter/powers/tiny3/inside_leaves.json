@@ -2,6 +2,7 @@
     "type": "origins:multiple",
     "phasing": {
         "type": "origins:phasing",
+        "render_type": "none",
         "block_condition": {
             "type": "origins:in_tag",
             "tag": "minecraft:leaves"

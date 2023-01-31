@@ -1,5 +1,6 @@
 {
     "type": "origins:phasing",
+    "render_type": "none",
     "block_condition": {
         "type": "origins:block",
         "block": "minecraft:iron_bars"
