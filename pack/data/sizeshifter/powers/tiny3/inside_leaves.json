@@ -1,0 +1,63 @@
+{
+    "type": "origins:multiple",
+    "phasing": {
+        "type": "origins:phasing",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:leaves"
+        },
+        "phase_down_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "minecraft:leaves"
+                    }
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        }
+    },
+    "climbing": {
+        "type": "origins:climbing",
+        "condition": {
+            "type": "origins:in_block_anywhere",
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "minecraft:leaves"
+            }
+        }
+    },
+    "prevent_block_selection": {
+        "type": "origins:prevent_block_selection",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:leaves"
+        },
+        "condition": {
+            "type": "origins:in_block_anywhere",
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "minecraft:leaves"
+            }
+        }
+    },
+    "prevent_elytra_flight": {
+        "type": "origins:prevent_elytra_flight",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:leaves"
+        },
+        "condition": {
+            "type": "origins:in_block_anywhere",
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "minecraft:leaves"
+            }
+        }
+    }
+}

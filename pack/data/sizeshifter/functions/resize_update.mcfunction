@@ -17,6 +17,9 @@ execute unless score @s sizeshifter_resize matches ..-5 run power revoke @s size
 execute if score @s sizeshifter_resize matches ..-3 run power grant @s sizeshifter:tiny3/viscosity_water sizeshifter:resize
 execute unless score @s sizeshifter_resize matches ..-3 run power revoke @s sizeshifter:tiny3/viscosity_water sizeshifter:resize
 
+execute if score @s sizeshifter_resize matches ..-3 run power grant @s sizeshifter:tiny3/inside_leaves sizeshifter:resize
+execute unless score @s sizeshifter_resize matches ..-3 run power revoke @s sizeshifter:tiny3/inside_leaves sizeshifter:resize
+
 execute if score @s sizeshifter_resize matches ..-2 run power grant @s sizeshifter:tiny2/prick_immunity sizeshifter:resize
 execute unless score @s sizeshifter_resize matches ..-2 run power revoke @s sizeshifter:tiny2/prick_immunity sizeshifter:resize
 
