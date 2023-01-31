@@ -5,7 +5,7 @@
         "render_type": "none",
         "block_condition": {
             "type": "origins:in_tag",
-            "tag": "minecraft:leaves"
+            "tag": "sizeshifter:leaves_and_roots"
         },
         "phase_down_condition": {
             "type": "origins:or",
@@ -14,7 +14,7 @@
                     "type": "origins:in_block",
                     "block_condition": {
                         "type": "origins:in_tag",
-                        "tag": "minecraft:leaves"
+                        "tag": "sizeshifter:leaves_and_roots"
                     }
                 },
                 {
@@ -29,7 +29,7 @@
             "type": "origins:in_block_anywhere",
             "block_condition": {
                 "type": "origins:in_tag",
-                "tag": "minecraft:leaves"
+                "tag": "sizeshifter:leaves_and_roots"
             }
         }
     },
@@ -37,13 +37,13 @@
         "type": "origins:prevent_block_selection",
         "block_condition": {
             "type": "origins:in_tag",
-            "tag": "minecraft:leaves"
+            "tag": "sizeshifter:leaves_and_roots"
         },
         "condition": {
             "type": "origins:in_block_anywhere",
             "block_condition": {
                 "type": "origins:in_tag",
-                "tag": "minecraft:leaves"
+                "tag": "sizeshifter:leaves_and_roots"
             }
         }
     },
@@ -51,13 +51,13 @@
         "type": "origins:prevent_elytra_flight",
         "block_condition": {
             "type": "origins:in_tag",
-            "tag": "minecraft:leaves"
+            "tag": "sizeshifter:leaves_and_roots"
         },
         "condition": {
             "type": "origins:in_block_anywhere",
             "block_condition": {
                 "type": "origins:in_tag",
-                "tag": "minecraft:leaves"
+                "tag": "sizeshifter:leaves_and_roots"
             }
         }
     }
