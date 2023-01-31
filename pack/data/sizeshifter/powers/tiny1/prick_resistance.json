@@ -1,0 +1,24 @@
+{
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:name",
+                "name": "cactus"
+            },
+            {
+                "type": "origins:name",
+                "name": "sweetBerryBush"
+            },
+            {
+                "type": "origins:name",
+                "name": "thorns"
+            }
+        ]
+    },
+    "modifier": {
+        "operation": "multiply_total",
+        "value": -0.625
+    }
+}
