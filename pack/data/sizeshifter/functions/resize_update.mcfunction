@@ -44,6 +44,9 @@ execute if score @s sizeshifter_resize matches 0 run power revoke @s sizeshifter
 execute if score @s sizeshifter_resize matches 1 run power grant @s sizeshifter:huge1/metabolism sizeshifter:resize
 execute unless score @s sizeshifter_resize matches 1 run power revoke @s sizeshifter:huge1/metabolism sizeshifter:resize
 
+execute if score @s sizeshifter_resize matches 1.. run power grant @s sizeshifter:huge1/too_big_for_bed sizeshifter:resize
+execute unless score @s sizeshifter_resize matches 1.. run power revoke @s sizeshifter:huge1/too_big_for_bed sizeshifter:resize
+
 execute if score @s sizeshifter_resize matches 2 run power grant @s sizeshifter:huge2/metabolism sizeshifter:resize
 execute unless score @s sizeshifter_resize matches 2 run power revoke @s sizeshifter:huge2/metabolism sizeshifter:resize
 

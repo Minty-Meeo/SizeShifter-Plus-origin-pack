@@ -1,0 +1,9 @@
+{
+    "type": "origins:prevent_sleep",
+    "message": "You may not rest now; you are too big",
+    "condition": {
+        "type": "origins:gamemode",
+        "gamemode": "creative",
+        "inverted": true
+    }
+}
