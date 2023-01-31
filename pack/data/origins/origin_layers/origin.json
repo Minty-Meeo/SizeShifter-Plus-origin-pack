@@ -1,6 +1,7 @@
 {
     "replace": false,
     "origins": [
-        "sizeshifter:sizeshifter"
+        "sizeshifter:sizeshifter",
+        "sizeshifter:sizeshifter2"
     ]
 }

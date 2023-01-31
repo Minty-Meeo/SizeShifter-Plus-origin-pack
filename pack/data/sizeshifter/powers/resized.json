@@ -1,0 +1,369 @@
+{
+    "type": "origins:multiple",
+    "on_death": {
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:execute_command",
+            "command": "function sizeshifter:resize_reset"
+        }
+    },
+    "min_hunger": {
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:gamemode",
+                                "gamemode": "creative"
+                            },
+                            {
+                                "type": "origins:gamemode",
+                                "gamemode": "spectator"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:nothing"
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "<=",
+                                "compare_to": 0
+                            },
+                            {
+                                "type": "origins:scoreboard",
+                                "objective": "sizeshifter_resize",
+                                "comparison": "<",
+                                "compare_to": 0
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s sizeshifter_resize 0"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "function sizeshifter:resize_update"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "<=",
+                                "compare_to": 2
+                            },
+                            {
+                                "type": "origins:scoreboard",
+                                "objective": "sizeshifter_resize",
+                                "comparison": "<",
+                                "compare_to": -1
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s sizeshifter_resize -1"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "function sizeshifter:resize_update"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "<=",
+                                "compare_to": 4
+                            },
+                            {
+                                "type": "origins:scoreboard",
+                                "objective": "sizeshifter_resize",
+                                "comparison": "<",
+                                "compare_to": -2
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s sizeshifter_resize -2"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "function sizeshifter:resize_update"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "<=",
+                                "compare_to": 6
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:if_else_list",
+                        "actions": [
+                            {
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "sizeshifter_resize",
+                                    "comparison": "<",
+                                    "compare_to": -3
+                                },
+                                "action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s sizeshifter_resize -3"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "function sizeshifter:resize_update"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "sizeshifter_resize",
+                                    "comparison": ">",
+                                    "compare_to": 0
+                                },
+                                "action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s sizeshifter_resize 0"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "function sizeshifter:resize_update"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "<=",
+                                "compare_to": 8
+                            },
+                            {
+                                "type": "origins:scoreboard",
+                                "objective": "sizeshifter_resize",
+                                "comparison": "<",
+                                "compare_to": -4
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s sizeshifter_resize -4"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "function sizeshifter:resize_update"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "<=",
+                                "compare_to": 10
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:if_else_list",
+                        "actions": [
+                            {
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "sizeshifter_resize",
+                                    "comparison": "<",
+                                    "compare_to": -5
+                                },
+                                "action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s sizeshifter_resize -5"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "function sizeshifter:resize_update"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "sizeshifter_resize",
+                                    "comparison": ">",
+                                    "compare_to": 1
+                                },
+                                "action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s sizeshifter_resize 1"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "function sizeshifter:resize_update"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "<=",
+                                "compare_to": 12
+                            },
+                            {
+                                "type": "origins:scoreboard",
+                                "objective": "sizeshifter_resize",
+                                "comparison": "<",
+                                "compare_to": -6
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scoreboard players set @s sizeshifter_resize -6"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "function sizeshifter:resize_update"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "<=",
+                                "compare_to": 14
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:if_else_list",
+                        "actions": [
+                            {
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "sizeshifter_resize",
+                                    "comparison": "<",
+                                    "compare_to": -7
+                                },
+                                "action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s sizeshifter_resize -7"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "function sizeshifter:resize_update"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:scoreboard",
+                                    "objective": "sizeshifter_resize",
+                                    "comparison": ">",
+                                    "compare_to": 2
+                                },
+                                "action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "scoreboard players set @s sizeshifter_resize 2"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "function sizeshifter:resize_update"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

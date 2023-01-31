@@ -1,0 +1,11 @@
+{
+    "powers": [
+        "sizeshifter:grow_self2",
+        "sizeshifter:shrink_self2",
+        "sizeshifter:grow_other2",
+        "sizeshifter:shrink_other2"
+    ],
+    "icon": "minecraft:red_mushroom",
+    "name": "sizeshifter2",
+    "description": "A race that is imbued with size altering powers. They can change the size of themselves and others."
+}
