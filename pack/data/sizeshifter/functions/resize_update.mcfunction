@@ -38,6 +38,9 @@ execute unless score @s sizeshifter_resize matches ..-1 run power revoke @s size
 execute if score @s sizeshifter_resize matches ..-1 run power grant @s sizeshifter:tiny1/fall_immunity sizeshifter:resize
 execute unless score @s sizeshifter_resize matches ..-1 run power revoke @s sizeshifter:tiny1/fall_immunity sizeshifter:resize
 
+execute if score @s sizeshifter_resize matches ..-1 run power grant @s sizeshifter:tiny1/harmless_ender_pearl sizeshifter:resize
+execute unless score @s sizeshifter_resize matches ..-1 run power revoke @s sizeshifter:tiny1/harmless_ender_pearl sizeshifter:resize
+
 execute if score @s sizeshifter_resize matches -1 run power grant @s sizeshifter:tiny1/crouch_jump sizeshifter:resize
 execute unless score @s sizeshifter_resize matches -1 run power revoke @s sizeshifter:tiny1/crouch_jump sizeshifter:resize
 
