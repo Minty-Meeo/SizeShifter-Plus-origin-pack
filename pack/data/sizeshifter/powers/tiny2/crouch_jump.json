@@ -1,0 +1,27 @@
+{
+    "type": "origins:modify_jump",
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 1.165082202
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:gamemode",
+                    "gamemode": "creative",
+                    "inverted": true
+                },
+                "if_action": {
+                    "type": "origins:exhaust",
+                    "amount": 0.5
+                }
+            }
+        ]
+    }
+}
