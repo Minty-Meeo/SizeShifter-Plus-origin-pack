@@ -1,0 +1,84 @@
+{
+    "type": "origins:climbing",
+    "allow_holding": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:collided_horizontally"
+            },
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:slime_ball"
+                            }
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "offhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:slime_ball"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "hold_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:block_collision",
+                        "offset_x": 0.01,
+                        "offset_z": 0.01,
+                        "offset_y": 0
+                    },
+                    {
+                        "type": "origins:block_collision",
+                        "offset_x": -0.01,
+                        "offset_z": -0.01,
+                        "offset_y": 0
+                    }
+                ]
+            },
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:slime_ball"
+                            }
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "offhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:slime_ball"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
