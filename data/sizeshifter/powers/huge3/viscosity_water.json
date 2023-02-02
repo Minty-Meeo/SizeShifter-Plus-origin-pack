@@ -1,7 +1,0 @@
-{
-    "type": "origins:ignore_water",
-    "condition": {
-        "type": "origins:sprinting",
-        "inverted": true
-    }
-}

@@ -1,0 +1,60 @@
+{
+    "type": "origins:multiple",
+    "standing": {
+        "type": "origins:modify_velocity",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">=",
+                    "compare_to": 0.0
+                },
+                {
+                    "type": "origins:creative_flying",
+                    "inverted": true
+                }
+            ]
+        },
+        "modifier": {
+            "value": -0.025,
+            "operation": "max_base"
+        },
+        "axes": [
+            "y"
+        ]
+    },
+    "sneaking": {
+        "type": "origins:modify_velocity",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">=",
+                    "compare_to": 0.0
+                },
+                {
+                    "type": "origins:creative_flying",
+                    "inverted": true
+                }
+            ]
+        },
+        "modifier": {
+            "value": -0.225,
+            "operation": "max_base"
+        },
+        "axes": [
+            "y"
+        ]
+    }
+}
