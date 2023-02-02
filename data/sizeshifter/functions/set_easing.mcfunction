@@ -1,4 +1,4 @@
-scale easing set pehkui:width pehkui:quadratic_in_out
+scale easing set pehkui:width pehkui:quartic_in_out
 scale easing set pehkui:height pehkui:quadratic_in_out
 scale easing set pehkui:drops pehkui:quadratic_in_out
 scale easing set pehkui:motion pehkui:quadratic_in_out
