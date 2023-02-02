@@ -59,8 +59,8 @@ execute unless score @s sizeshifter_resize matches 1.. run power revoke @s sizes
 execute if score @s sizeshifter_resize matches 2 run power grant @s sizeshifter:huge2/metabolism sizeshifter:resize
 execute unless score @s sizeshifter_resize matches 2 run power revoke @s sizeshifter:huge2/metabolism sizeshifter:resize
 
-execute if score @s sizeshifter_resize matches 2.. run power grant @s sizeshifter:huge2/viscosity_water sizeshifter:resize
-execute unless score @s sizeshifter_resize matches 2.. run power revoke @s sizeshifter:huge2/viscosity_water sizeshifter:resize
+execute if score @s sizeshifter_resize matches 2.. run power grant @s sizeshifter:huge2/no_crawl_swimming sizeshifter:resize
+execute unless score @s sizeshifter_resize matches 2.. run power revoke @s sizeshifter:huge2/no_crawl_swimming sizeshifter:resize
 
 execute if score @s sizeshifter_resize matches 2.. run power grant @s sizeshifter:huge2/no_flight sizeshifter:resize
 execute unless score @s sizeshifter_resize matches 2.. run power revoke @s sizeshifter:huge2/no_flight sizeshifter:resize
