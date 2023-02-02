@@ -47,6 +47,10 @@
                     "type": "origins:on_block"
                 },
                 {
+                    "type": "origins:swimming",
+                    "inverted": true
+                },
+                {
                     "type": "origins:fluid_height",
                     "fluid": "minecraft:water",
                     "comparison": "<",
