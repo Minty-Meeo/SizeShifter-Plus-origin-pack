@@ -1,0 +1,135 @@
+{
+    "type": "origins:multiple",
+    "modify_swim_speed": {
+        "type": "origins:modify_swim_speed",
+        "condition": {
+            "type": "origins:swimming"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.625
+        }
+    },
+    "ignore_water": {
+        "type": "origins:ignore_water",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:swimming",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "<",
+                    "compare_to": 6.0
+                }
+            ]
+        }
+    },
+    "fake_jump_trigger": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.jump",
+            "continuous": true
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_fake_jump_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:on_block"
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "<",
+                    "compare_to": 6.0
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:trigger_cooldown",
+            "power": "*:*_fake_jump_cooldown"
+        }
+    },
+    "fake_jump_cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 5
+    },
+    "sinking_standing": {
+        "type": "origins:modify_velocity",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_fake_jump_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:sneaking",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">",
+                    "compare_to": 0.0
+                },
+                {
+                    "type": "origins:creative_flying",
+                    "inverted": true
+                }
+            ]
+        },
+        "modifier": {
+            "value": -0.025,
+            "operation": "max_base"
+        },
+        "axes": [
+            "y"
+        ]
+    },
+    "sinking_sneaking": {
+        "type": "origins:modify_velocity",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_fake_jump_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">",
+                    "compare_to": 0.0
+                },
+                {
+                    "type": "origins:creative_flying",
+                    "inverted": true
+                }
+            ]
+        },
+        "modifier": {
+            "value": -0.225,
+            "operation": "max_base"
+        },
+        "axes": [
+            "y"
+        ]
+    }
+}

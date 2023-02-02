@@ -1,0 +1,35 @@
+{
+    "type": "origins:multiple",
+    "modify_swim_speed": {
+        "type": "origins:modify_swim_speed",
+        "condition": {
+            "type": "origins:swimming"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.5
+        }
+    },
+    "ignore_water": {
+        "type": "origins:ignore_water",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:swimming",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:collided_horizontally",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "<",
+                    "compare_to": 3.75
+                }
+            ]
+        }
+    }
+}

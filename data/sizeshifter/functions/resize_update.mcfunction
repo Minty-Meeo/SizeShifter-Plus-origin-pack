@@ -53,14 +53,17 @@ execute if score @s sizeshifter_resize matches 0 run power revoke @s sizeshifter
 execute if score @s sizeshifter_resize matches 1 run power grant @s sizeshifter:metabolism_huge1 sizeshifter:resize
 execute unless score @s sizeshifter_resize matches 1 run power revoke @s sizeshifter:metabolism_huge1 sizeshifter:resize
 
+execute if score @s sizeshifter_resize matches 1 run power grant @s sizeshifter:swimming_huge1 sizeshifter:resize
+execute unless score @s sizeshifter_resize matches 1 run power revoke @s sizeshifter:swimming_huge1 sizeshifter:resize
+
 execute if score @s sizeshifter_resize matches 1.. run power grant @s sizeshifter:too_big_for_bed sizeshifter:resize
 execute unless score @s sizeshifter_resize matches 1.. run power revoke @s sizeshifter:too_big_for_bed sizeshifter:resize
 
 execute if score @s sizeshifter_resize matches 2 run power grant @s sizeshifter:metabolism_huge2 sizeshifter:resize
 execute unless score @s sizeshifter_resize matches 2 run power revoke @s sizeshifter:metabolism_huge2 sizeshifter:resize
 
-#execute if score @s sizeshifter_resize matches 2.. run power grant @s sizeshifter:no_crawl_swimming sizeshifter:resize
-#execute unless score @s sizeshifter_resize matches 2.. run power revoke @s sizeshifter:no_crawl_swimming sizeshifter:resize
+execute if score @s sizeshifter_resize matches 2 run power grant @s sizeshifter:swimming_huge2 sizeshifter:resize
+execute unless score @s sizeshifter_resize matches 2 run power revoke @s sizeshifter:swimming_huge2 sizeshifter:resize
 
 execute if score @s sizeshifter_resize matches 2.. run power grant @s sizeshifter:no_elytra_flight sizeshifter:resize
 execute unless score @s sizeshifter_resize matches 2.. run power revoke @s sizeshifter:no_elytra_flight sizeshifter:resize
@@ -68,7 +71,7 @@ execute unless score @s sizeshifter_resize matches 2.. run power revoke @s sizes
 execute if score @s sizeshifter_resize matches 3.. run power grant @s sizeshifter:metabolism_huge3 sizeshifter:resize
 execute unless score @s sizeshifter_resize matches 3.. run power revoke @s sizeshifter:metabolism_huge3 sizeshifter:resize
 
-execute if score @s sizeshifter_resize matches 3.. run power grant @s sizeshifter:water_sinking sizeshifter:resize
-execute unless score @s sizeshifter_resize matches 3.. run power revoke @s sizeshifter:water_sinking sizeshifter:resize
+execute if score @s sizeshifter_resize matches 3.. run power grant @s sizeshifter:swimming_huge3 sizeshifter:resize
+execute unless score @s sizeshifter_resize matches 3.. run power revoke @s sizeshifter:swimming_huge3 sizeshifter:resize
 
 execute if score @s sizeshifter_resize matches 0 run scoreboard players reset @s sizeshifter_resize
