@@ -59,10 +59,16 @@ execute unless score @s sizeshifter_resize matches 1.. run power revoke @s sizes
 execute if score @s sizeshifter_resize matches 2 run power grant @s sizeshifter:huge2/metabolism sizeshifter:resize
 execute unless score @s sizeshifter_resize matches 2 run power revoke @s sizeshifter:huge2/metabolism sizeshifter:resize
 
+execute if score @s sizeshifter_resize matches 2.. run power grant @s sizeshifter:huge2/viscosity_water sizeshifter:resize
+execute unless score @s sizeshifter_resize matches 2.. run power revoke @s sizeshifter:huge2/viscosity_water sizeshifter:resize
+
 execute if score @s sizeshifter_resize matches 2.. run power grant @s sizeshifter:huge2/no_flight sizeshifter:resize
 execute unless score @s sizeshifter_resize matches 2.. run power revoke @s sizeshifter:huge2/no_flight sizeshifter:resize
 
-execute if score @s sizeshifter_resize matches 3 run power grant @s sizeshifter:huge3/metabolism sizeshifter:resize
-execute unless score @s sizeshifter_resize matches 3 run power revoke @s sizeshifter:huge3/metabolism sizeshifter:resize
+execute if score @s sizeshifter_resize matches 3.. run power grant @s sizeshifter:huge3/metabolism sizeshifter:resize
+execute unless score @s sizeshifter_resize matches 3.. run power revoke @s sizeshifter:huge3/metabolism sizeshifter:resize
+
+execute if score @s sizeshifter_resize matches 3.. run power grant @s sizeshifter:huge3/viscosity_water sizeshifter:resize
+execute unless score @s sizeshifter_resize matches 3.. run power revoke @s sizeshifter:huge3/viscosity_water sizeshifter:resize
 
 execute if score @s sizeshifter_resize matches 0 run scoreboard players reset @s sizeshifter_resize
