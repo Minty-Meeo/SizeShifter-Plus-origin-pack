@@ -1,5 +1,6 @@
 {
     "powers": [
+        "sizeshifter:score_mirror",
         "sizeshifter:grow_self",
         "sizeshifter:shrink_self",
         "sizeshifter:grow_other",

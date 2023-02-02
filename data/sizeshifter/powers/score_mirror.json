@@ -1,0 +1,35 @@
+{
+    "type": "origins:multiple",
+    "tiny": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 8,
+        "should_render": true,
+        "hud_render": {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_tiny",
+                "comparison": ">",
+                "compare_to": 0
+            },
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 17
+        }
+    },
+    "huge": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 3,
+        "should_render": true,
+        "hud_render": {
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_huge",
+                "comparison": ">",
+                "compare_to": 0
+            },
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 16
+        }
+    }
+}

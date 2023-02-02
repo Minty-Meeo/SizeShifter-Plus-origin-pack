@@ -1,3 +1,6 @@
+resource set @s sizeshifter:score_mirror_tiny 1
+resource set @s sizeshifter:score_mirror_huge 0
+
 function sizeshifter:set_easing
 function sizeshifter:set_delay
 
