@@ -40,7 +40,17 @@
                 {
                     "type": "origins:target_condition",
                     "condition": {
-                        "type": "origins:living"
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:living"
+                            },
+                            {
+                                "type": "origins:in_tag",
+                                "tag": "*:not_resizeable",
+                                "inverted": true
+                            }
+                        ]
                     }
                 }
             ]
