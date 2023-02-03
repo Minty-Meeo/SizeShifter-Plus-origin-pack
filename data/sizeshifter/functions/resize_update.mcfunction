@@ -14,6 +14,12 @@ execute if score @s sizeshifter_resize matches 3 run function sizeshifter:huge3
 execute if score @s sizeshifter_resize matches ..-8 run power grant @s sizeshifter:ultra_lightweight sizeshifter:resize
 execute unless score @s sizeshifter_resize matches ..-8 run power revoke @s sizeshifter:ultra_lightweight sizeshifter:resize
 
+execute if score @s sizeshifter_resize matches ..-5 run power grant @s sizeshifter:quiet_steps_tiny5 sizeshifter:resize
+execute unless score @s sizeshifter_resize matches ..-5 run power revoke @s sizeshifter:quiet_steps_tiny5 sizeshifter:resize
+
+execute if score @s sizeshifter_resize matches -4 run power grant @s sizeshifter:quiet_steps_tiny4 sizeshifter:resize
+execute unless score @s sizeshifter_resize matches -4 run power revoke @s sizeshifter:quiet_steps_tiny4 sizeshifter:resize
+
 execute if score @s sizeshifter_resize matches ..-3 run power grant @s sizeshifter:no_crawl_swimming sizeshifter:resize
 execute unless score @s sizeshifter_resize matches ..-3 run power revoke @s sizeshifter:no_crawl_swimming sizeshifter:resize
 
@@ -26,6 +32,9 @@ execute unless score @s sizeshifter_resize matches ..-3 run power revoke @s size
 execute if score @s sizeshifter_resize matches -7..-3 run power grant @s sizeshifter:feather_flying sizeshifter:resize
 execute unless score @s sizeshifter_resize matches -7..-3 run power revoke @s sizeshifter:feather_flying sizeshifter:resize
 
+execute if score @s sizeshifter_resize matches -3 run power grant @s sizeshifter:quiet_steps_tiny3 sizeshifter:resize
+execute unless score @s sizeshifter_resize matches -3 run power revoke @s sizeshifter:quiet_steps_tiny3 sizeshifter:resize
+
 execute if score @s sizeshifter_resize matches ..-2 run power grant @s sizeshifter:crouch_jump_tiny2 sizeshifter:resize
 execute unless score @s sizeshifter_resize matches ..-2 run power revoke @s sizeshifter:crouch_jump_tiny2 sizeshifter:resize
 
@@ -34,6 +43,9 @@ execute unless score @s sizeshifter_resize matches ..-2 run power revoke @s size
 
 execute if score @s sizeshifter_resize matches ..-2 run power grant @s sizeshifter:fall_immunity sizeshifter:resize
 execute unless score @s sizeshifter_resize matches ..-2 run power revoke @s sizeshifter:fall_immunity sizeshifter:resize
+
+execute if score @s sizeshifter_resize matches -2 run power grant @s sizeshifter:quiet_steps_tiny2 sizeshifter:resize
+execute unless score @s sizeshifter_resize matches -2 run power revoke @s sizeshifter:quiet_steps_tiny2 sizeshifter:resize
 
 execute if score @s sizeshifter_resize matches ..-1 run power grant @s sizeshifter:slime_ball_climbing sizeshifter:resize
 execute unless score @s sizeshifter_resize matches ..-1 run power revoke @s sizeshifter:slime_ball_climbing sizeshifter:resize

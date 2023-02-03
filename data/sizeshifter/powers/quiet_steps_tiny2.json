@@ -1,0 +1,16 @@
+{
+    "type": "origins:prevent_game_event",
+    "tag": "sizeshifter:scaling_vibrations",
+    "condition": {
+        "type": "origins:block_in_radius",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:sculk_sensor"
+        },
+        "radius": 7,
+        "shape": "sphere",
+        "comparison": ">",
+        "compare_to": 0,
+        "inverted": true
+    }
+}

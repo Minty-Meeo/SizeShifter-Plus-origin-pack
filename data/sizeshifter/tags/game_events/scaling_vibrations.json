@@ -1,0 +1,25 @@
+{
+    "values": [
+        "minecraft:step",
+        "minecraft:flap",
+        "minecraft:swim",
+        "minecraft:elytra_glide",
+        "minecraft:hit_ground",
+        "minecraft:splash",
+        "minecraft:entity_shake",
+        "minecraft:drink",
+        "minecraft:prime_fuse",
+        "minecraft:projectile_shoot",
+        "minecraft:entity_interact",
+        "minecraft:projectile_land",
+        "minecraft:eat",
+        "minecraft:entity_damage",
+        "minecraft:equip",
+        "minecraft:shear",
+        "minecraft:entity_roar",
+        "minecraft:entity_die",
+        "minecraft:item_interact_start",
+        "minecraft:item_interact_finish",
+        "minecraft:explode"
+    ]
+}
