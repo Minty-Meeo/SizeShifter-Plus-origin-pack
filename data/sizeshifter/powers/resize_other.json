@@ -87,6 +87,36 @@
                                     "type": "origins:in_tag",
                                     "tag": "*:not_resizeable",
                                     "inverted": true
+                                },
+                                {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:scoreboard",
+                                            "objective": "sizeshifter_resize",
+                                            "comparison": "<",
+                                            "compare_to": 3
+                                        },
+                                        {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "type": "origins:scoreboard",
+                                                    "objective": "sizeshifter_resize",
+                                                    "comparison": "==",
+                                                    "compare_to": 0,
+                                                    "inverted": true
+                                                },
+                                                {
+                                                    "type": "origins:scoreboard",
+                                                    "objective": "sizeshifter_resize",
+                                                    "comparison": "!=",
+                                                    "compare_to": 0,
+                                                    "inverted": true
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -192,6 +222,36 @@
                                     "type": "origins:in_tag",
                                     "tag": "*:not_resizeable",
                                     "inverted": true
+                                },
+                                {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:scoreboard",
+                                            "objective": "sizeshifter_resize",
+                                            "comparison": ">",
+                                            "compare_to": -8
+                                        },
+                                        {
+                                            "type": "origins:and",
+                                            "conditions": [
+                                                {
+                                                    "type": "origins:scoreboard",
+                                                    "objective": "sizeshifter_resize",
+                                                    "comparison": "==",
+                                                    "compare_to": 0,
+                                                    "inverted": true
+                                                },
+                                                {
+                                                    "type": "origins:scoreboard",
+                                                    "objective": "sizeshifter_resize",
+                                                    "comparison": "!=",
+                                                    "compare_to": 0,
+                                                    "inverted": true
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         }

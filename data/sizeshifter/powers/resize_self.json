@@ -33,10 +33,45 @@
             "continuous": true
         },
         "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_cooldown",
-            "comparison": "==",
-            "compare_to": 0
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:scoreboard",
+                            "objective": "sizeshifter_resize",
+                            "comparison": "<",
+                            "compare_to": 3
+                        },
+                        {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:scoreboard",
+                                    "objective": "sizeshifter_resize",
+                                    "comparison": "==",
+                                    "compare_to": 0,
+                                    "inverted": true
+                                },
+                                {
+                                    "type": "origins:scoreboard",
+                                    "objective": "sizeshifter_resize",
+                                    "comparison": "!=",
+                                    "compare_to": 0,
+                                    "inverted": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         "entity_action": {
             "type": "origins:and",
@@ -59,10 +94,45 @@
             "continuous": true
         },
         "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_cooldown",
-            "comparison": "==",
-            "compare_to": 0
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:scoreboard",
+                            "objective": "sizeshifter_resize",
+                            "comparison": ">",
+                            "compare_to": -8
+                        },
+                        {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:scoreboard",
+                                    "objective": "sizeshifter_resize",
+                                    "comparison": "==",
+                                    "compare_to": 0,
+                                    "inverted": true
+                                },
+                                {
+                                    "type": "origins:scoreboard",
+                                    "objective": "sizeshifter_resize",
+                                    "comparison": "!=",
+                                    "compare_to": 0,
+                                    "inverted": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         "entity_action": {
             "type": "origins:and",
