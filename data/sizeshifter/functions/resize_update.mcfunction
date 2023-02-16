@@ -50,11 +50,11 @@ execute unless score @s sizeshifter_resize matches -2 run power revoke @s sizesh
 execute if score @s sizeshifter_resize matches ..-1 run power grant @s sizeshifter:slime_ball_climbing sizeshifter:resize
 execute unless score @s sizeshifter_resize matches ..-1 run power revoke @s sizeshifter:slime_ball_climbing sizeshifter:resize
 
+execute if score @s sizeshifter_resize matches ..-1 run power grant @s sizeshifter:crouch_jump_tiny1 sizeshifter:resize
+execute unless score @s sizeshifter_resize matches ..-1 run power revoke @s sizeshifter:crouch_jump_tiny1 sizeshifter:resize
+
 execute if score @s sizeshifter_resize matches -1 run power grant @s sizeshifter:fall_resistance_tiny1 sizeshifter:resize
 execute unless score @s sizeshifter_resize matches -1 run power revoke @s sizeshifter:fall_resistance_tiny1 sizeshifter:resize
-
-execute if score @s sizeshifter_resize matches -1 run power grant @s sizeshifter:crouch_jump_tiny1 sizeshifter:resize
-execute unless score @s sizeshifter_resize matches -1 run power revoke @s sizeshifter:crouch_jump_tiny1 sizeshifter:resize
 
 execute if score @s sizeshifter_resize matches -1 run power grant @s sizeshifter:prick_resistance sizeshifter:resize
 execute unless score @s sizeshifter_resize matches -1 run power revoke @s sizeshifter:prick_resistance sizeshifter:resize

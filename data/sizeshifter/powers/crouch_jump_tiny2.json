@@ -1,27 +1,80 @@
 {
-    "type": "origins:modify_jump",
-    "condition": {
-        "type": "origins:sneaking"
-    },
-    "modifier": {
-        "operation": "multiply_total",
-        "value": 1.165082202
-    },
-    "entity_action": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:if_else",
-                "condition": {
-                    "type": "origins:gamemode",
-                    "gamemode": "creative",
+    "type": "origins:multiple",
+    "charging": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:moving",
                     "inverted": true
                 },
-                "if_action": {
-                    "type": "origins:exhaust",
-                    "amount": 0.5
+                {
+                    "type": "origins:on_block"
                 }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "operation": "add",
+            "change": 1
+        },
+        "falling_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "operation": "set",
+            "change": 0
+        }
+    },
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 10,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 3,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": ">",
+                "compare_to": 1
             }
-        ]
+        }
+    },
+    "modify_jump": {
+        "type": "origins:modify_jump",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 10
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.472531436
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:gamemode",
+                        "gamemode": "creative",
+                        "inverted": true
+                    },
+                    "if_action": {
+                        "type": "origins:exhaust",
+                        "amount": 0.25
+                    }
+                }
+            ]
+        }
     }
 }
