@@ -2,9 +2,12 @@
     "powers": [
         "sizeshifter:score_mirror",
         "sizeshifter:resize_self",
-        "sizeshifter:resize_other"
+        "sizeshifter:resize_other",
+        "sizeshifter:meta_description_huge",
+        "sizeshifter:meta_description_tiny"
     ],
     "icon": "minecraft:red_mushroom",
-    "name": "Size Shifter",
-    "description": "A race that is imbued with size altering powers. They can change the size of themselves and others."
+    "name": "Sizeshifter",
+    "description": "A race imbued with size-altering powers; one can resize itself and others. Who said one size fits all?",
+    "impact": 2
 }

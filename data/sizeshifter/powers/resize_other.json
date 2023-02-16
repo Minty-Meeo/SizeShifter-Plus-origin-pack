@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Resize Other",
-    "description": "You can also resize any living entity at the cost of exhausting your hunger bar.  This power has no effect on ender dragons, withers, or wardens.",
+    "description": "Resize any living entity at the cost of exhausting your hunger bar. This power has no effect on ender dragons, withers, or wardens.",
     "badges": [
         {
             "type": "origins:tooltip",

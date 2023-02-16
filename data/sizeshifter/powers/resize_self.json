@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Resize Self",
-    "description": "You can go tiny or become huge to adapt to any situation.  If your hunger bar drops too low, you'll be unable to maintain certain sizes.",
+    "description": "If your hunger bar drops too low, you will be unable to maintain certain sizes.",
     "badges": [
         {
             "type": "origins:tooltip",
