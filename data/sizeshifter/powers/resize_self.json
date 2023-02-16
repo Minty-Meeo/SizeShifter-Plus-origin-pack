@@ -1,0 +1,91 @@
+{
+    "type": "origins:multiple",
+    "name": "Resize Self",
+    "description": "You can go tiny or become huge to adapt to any situation.  If your hunger bar drops too low, you'll be unable to maintain certain sizes.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": [
+                "Use [",
+                {
+                    "keybind": "key.origins.primary_active"
+                },
+                "] to grow yourself (up to 8x scale)."
+            ]
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": [
+                "Use [",
+                {
+                    "keybind": "key.origins.secondary_active"
+                },
+                "] to shrink yourself (down to 1/256x scale)."
+            ]
+        }
+    ],
+    "grow": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": true
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:resize_grow"
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "*:*_cooldown"
+                }
+            ]
+        }
+    },
+    "shrink": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.secondary_active",
+            "continuous": true
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "function sizeshifter:resize_shrink"
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "*:*_cooldown"
+                }
+            ]
+        }
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 20,
+        "should_render": true,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 1,
+            "inverted": true
+        }
+    }
+}

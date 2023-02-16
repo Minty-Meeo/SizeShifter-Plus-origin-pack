@@ -1,0 +1,261 @@
+{
+    "type": "origins:multiple",
+    "name": "Resize Other",
+    "description": "You can also resize any living entity at the cost of exhausting your hunger bar.  This power has no effect on ender dragons, withers, or wardens.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": [
+                "Use [",
+                {
+                    "keybind": "key.origins.ternary_active"
+                },
+                "] to grow the target in your crosshair (up to 8x scale)."
+            ]
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": [
+                "Use [",
+                {
+                    "keybind": "key.origins.quaternary_active"
+                },
+                "] to shrink the target in your crosshair (down to 1/256x scale)."
+            ]
+        }
+    ],
+    "grow": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.ternary_active",
+            "continuous": true
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "entity_action": {
+            "type": "origins:raycast",
+            "distance": 16,
+            "block": true,
+            "entity": true,
+            "shape_type": "visual",
+            "fluid_handling": "any",
+            "bientity_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:actor_condition",
+                        "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:resource",
+                                    "resource": "*:*_cooldown",
+                                    "comparison": "==",
+                                    "compare_to": 0
+                                },
+                                {
+                                    "type": "origins:gamemode",
+                                    "gamemode": "spectator",
+                                    "inverted": true
+                                },
+                                {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:food_level",
+                                            "comparison": ">=",
+                                            "compare_to": 4
+                                        },
+                                        {
+                                            "type": "origins:gamemode",
+                                            "gamemode": "creative"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "origins:target_condition",
+                        "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:living"
+                                },
+                                {
+                                    "type": "origins:in_tag",
+                                    "tag": "*:not_resizeable",
+                                    "inverted": true
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "bientity_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:actor_action",
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:trigger_cooldown",
+                                    "power": "*:*_cooldown"
+                                },
+                                {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:gamemode",
+                                        "gamemode": "creative",
+                                        "inverted": true
+                                    },
+                                    "if_action": {
+                                        "type": "origins:exhaust",
+                                        "amount": 16
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "function sizeshifter:resize_grow"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "shrink": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.origins.quaternary_active",
+            "continuous": true
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "entity_action": {
+            "type": "origins:raycast",
+            "distance": 16,
+            "block": true,
+            "entity": true,
+            "shape_type": "visual",
+            "fluid_handling": "any",
+            "bientity_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:actor_condition",
+                        "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:resource",
+                                    "resource": "*:*_cooldown",
+                                    "comparison": "==",
+                                    "compare_to": 0
+                                },
+                                {
+                                    "type": "origins:gamemode",
+                                    "gamemode": "spectator",
+                                    "inverted": true
+                                },
+                                {
+                                    "type": "origins:or",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:food_level",
+                                            "comparison": ">=",
+                                            "compare_to": 4
+                                        },
+                                        {
+                                            "type": "origins:gamemode",
+                                            "gamemode": "creative"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "origins:target_condition",
+                        "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:living"
+                                },
+                                {
+                                    "type": "origins:in_tag",
+                                    "tag": "*:not_resizeable",
+                                    "inverted": true
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "bientity_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:actor_action",
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:trigger_cooldown",
+                                    "power": "*:*_cooldown"
+                                },
+                                {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:gamemode",
+                                        "gamemode": "creative",
+                                        "inverted": true
+                                    },
+                                    "if_action": {
+                                        "type": "origins:exhaust",
+                                        "amount": 16
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "origins:target_action",
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "function sizeshifter:resize_shrink"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 20,
+        "should_render": true,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 1,
+            "inverted": true
+        }
+    }
+}

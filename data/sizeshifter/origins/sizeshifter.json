@@ -1,10 +1,8 @@
 {
     "powers": [
         "sizeshifter:score_mirror",
-        "sizeshifter:grow_self",
-        "sizeshifter:shrink_self",
-        "sizeshifter:grow_other",
-        "sizeshifter:shrink_other"
+        "sizeshifter:resize_self",
+        "sizeshifter:resize_other"
     ],
     "icon": "minecraft:red_mushroom",
     "name": "Size Shifter",
